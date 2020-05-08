@@ -5,70 +5,155 @@
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 <style type="text/css">
-	html {
-		background-color: #3d3d5c;
-		color: white;
+
+	body {
+		color: #2883BA;
+		font-family: 'Michroma', sans-serif;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		max-width: 1000px;
+	    background-color: black;
+	}
+
+	.section {
+		width: 100%;
+		margin: 25px auto;
+		display: flex; 
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    align-items: center;
 	}
 
 	#top {
-		font-family: 'Michroma', sans-serif;
-		max-width: 750px;
-		background-color: black;
-		margin: 100px 0;
-		justify-content: center;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-    	align-items: center;
-    	align-content: space-around;
-    	padding: 25px 0;
-    	margin: 50px auto;
-	}
-
-
-	#name {
-	font-size: 70px;
-    line-height: 1.2;
+	    padding: 20px 2%;
 	}
 
 	#title {
-		width: 400px;
-		text-align: right;
-		flex-direction: column;
-		padding-right: 23px;
-	    border-right: 2px solid white;
+		padding-left: 2%;
 	}
+
+	#name {
+		font-size: calc(16px + 3vw);
+    	line-height: 1.2;
+	}
+
+	#about {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
 
 	#job{
-		width: 400px;
-		font-size: 28px;
-		text-align: right;
+		font-size: calc(14px + 2vw);
+	}
+
+	#top, #content {
+		border-left: 2px solid #C80000;
+	}
+
+	#content {
+		padding: 0 10px;
+		margin-bottom: 10px;
 	}
 
 
-	#nav {
-	    display: flex;
-	    flex-direction: column;
-	    font-size: 32px;
-	    line-height: 1.4;
-	    /* height: 152px; */
-	    width: 300px;
-	    padding-left: 25px;
+	.readable {
+		font-family: helvetica;
+		}
+
+
+.topnav {
+    background: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 1% 0;
+    border-top: 2px solid #C80000;
+    border-bottom: 2px solid #C80000;
+    border-right: 2px solid #C80000;
+/*    position: fixed;*/
 	}
+
+.yellow {
+	color: #FFEB00;
+}
+
+.topnav a {
+	color: #FFEB00;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#about-left {
+	width: 300px;
+}
+
+#about-right {
+	width: 500px;
+}
+
+#robPic {
+	width: 300px;
+	height: auto;
+}
+
+
+@media all and (max-width: 600px) {  
+    
+  .topnav, #top, #about {
+  	flex-direction: column; 
+    align-items: center;
+  }
+
+  .topnav > li > a {
+  	font-size: 14px;
+  }
+
+  #title {
+  	border: none;
+  }
+
+  	#name, #job, #about-left, #about-right {
+		text-align: center;
+		width: 100%;
+	}
+
+	img {width: 100%;}
+
+}
 
 
 </style>
 <body>
 		<div id="top">
-			<div id="title">
-					<div id="name">Robert Test</div>
+			<div id="title column">
+					<div id="name">Robert Graff</div>
 					<div id="job">Developer</div>
 			</div>
-			<div id="nav">
-				<div>Philosophy</div>
-				<div>Work</div>
-				<div>Resume</div>
-				<div>Contact</div>
+		</div>
+		<nav>
+		  <ul class="topnav">
+		    <li class="item"><a href="#">Work</a></li>
+		    <li class="item"><a href="#">Contact</a></li>
+		    <li class="item"><a href="#">Resume</a></li>
+		  </ul>
+		</nav>
+		<div id="content" class="column">
+			<div id="about" class="section">
+					<div id="about-left"><img id="robPic" src="superRob.jpg"></div>
+					<div id="about-right">
+						<h3 class="yellow">Robert Graff: Mild-Mannered Developer</h3>
+						<p class="readable">After years of working as a mild-mannered copy editor and proofreader in the education and advertising sectors, Rob turned his focus to advancing his coding superpowers. And faster than a speeding bullet (Note: Check the copyright on that), Rob has now been designing and developing banners, digital assets, emails, and websites for the better part of two years.</p>
+					</div>
+			</div>
 			</div>
 		</div>
 
