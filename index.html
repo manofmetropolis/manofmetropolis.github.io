@@ -35,11 +35,15 @@
 
 	#name {font-size: calc(14px + 3vw);}
 	#job {font-size: calc(14px + 2vw);}
-	.title {font-size: calc(10px + 2vw); margin: 0;}
+	.title {font-size: calc(10px + 2vw); margin: 0; text-align: center;}
+
+	.hero {
+		margin: 0 auto;
+		text-align: center;
+	}
 
 	#superRob {
-		width: 100%;
-		height: auto;
+		width: 60%;
 	}
 
 	.blue {
@@ -49,7 +53,7 @@
 	nav a {
 		color: #FFEB00;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	nav ul {list-style: none;}
@@ -59,18 +63,15 @@
   		display: flex;
   		flex-wrap: wrap;
   		align-items: center;
+  		justify-content: space-around;
   		padding: 10px 0;
   		border-right: 1px solid red;
 	}
 
 	.item{
-	  width: 100%;
 	  text-align: center;
 	}
 
-	.hero {
-		padding: 5%;
-	}
 
 	.work {
 		background-color: green;
@@ -99,12 +100,13 @@
 		</nav>
 
 	<div id="main" class="left">
-			<div class="section hero">
+				<h2 class="title blue">Mild-Mannered Editor Turned Developer</h2>
+
+			<div class="hero">
 				<img id="superRob" src="superRob.jpg">
 			</div>
 
 			<div class="section about blue">
-				<h2 class="title">Mild-Mannered Editor Turned Developer</h2>
 				<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
