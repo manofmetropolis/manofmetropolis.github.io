@@ -4,157 +4,123 @@
 	<title></title>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
-<style type="text/css">
-
+<style>
 	body {
-		color: #2883BA;
-		font-family: 'Michroma', sans-serif;
 		margin: 0 auto;
-		display: flex;
-		flex-direction: column;
-		width: 80%;
-		max-width: 1000px;
-	    background-color: black;
-	}
-
-	.section {
-		width: 100%;
-		margin: 25px auto;
-		display: flex; 
-	    flex-direction: row;
-	    flex-wrap: wrap;
-	    justify-content: space-around;
-	    align-items: center;
-	}
-
-	#top {
-	    padding: 20px 2%;
-	}
-
-	#title {
-		padding-left: 2%;
-	}
-
-	#name {
-		font-size: calc(16px + 3vw);
-    	line-height: 1.2;
-	}
-
-	#about {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
-
-
-	#job{
-		font-size: calc(14px + 2vw);
-	}
-
-	#top, #content {
-		border-left: 2px solid #C80000;
-	}
-
-	#content {
-		padding: 0 10px;
-		margin-bottom: 10px;
-	}
-
-
-	.readable {
+		max-width: 800px;
 		font-family: helvetica;
-		}
-
-
-.topnav {
-    background: #000000;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    padding: 1% 0;
-    border-top: 2px solid #C80000;
-    border-bottom: 2px solid #C80000;
-    border-right: 2px solid #C80000;
-/*    position: fixed;*/
+		padding: 20px;
+		background-color: black;
 	}
 
-.yellow {
-	color: #FFEB00;
-}
+	header, .title, .copy {
+		padding: 10px 15px;
+	}
 
-.topnav a {
-	color: #FFEB00;
-	text-decoration: none;
-	font-size: 16px;
-}
+	header, .title, nav {
+		font-family: 'Michroma', sans-serif;
+	}
 
-#about-left {
-	width: 300px;
-}
+	header, nav, p {
+		margin: 0;
+	}
 
-#about-right {
-	width: 500px;
-}
+	.left {
+		border-left: 1px solid red;
+	}
 
-#robPic {
-	width: 100%;
-	height: auto;
-}
+	.bottom {
+		border-bottom: 1px solid red;
+	}
 
+	#name {font-size: calc(14px + 3vw);}
+	#job {font-size: calc(14px + 2vw);}
+	.title {font-size: calc(10px + 2vw); margin: 0;}
 
-/*@media all and (max-width: 767.98px) {  
-    
-  .topnav, #top, #about, #about-left, #about-right {
-  	flex-direction: column; 
-    align-items: center;
-  }
-
-  .topnav > li > a {
-  	font-size: 14px;
-  }
-
-  #title {
-  	border: none;
-  }
-
-  	#content, #name, #job, #about-left, #about-right {
+	#superRob {
 		width: 100%;
+		height: auto;
 	}
 
-	#robPic {width: 80%; height: auto; margin: 0 auto;}
+	.blue {
+		color: #2883BA;
+	}
 
-}*/
+	nav a {
+		color: #FFEB00;
+		text-decoration: none;
+		font-size: 16px;
+	}
+
+	nav ul {list-style: none;}
+
+	.topnav {
+		margin: 0;
+  		display: flex;
+  		flex-wrap: wrap;
+  		align-items: center;
+  		padding: 10px 0;
+  		border-right: 1px solid red;
+	}
+
+	.item{
+	  width: 100%;
+	  text-align: center;
+	}
+
+	.hero {
+		padding: 5%;
+	}
+
+	.work {
+		background-color: green;
+	}
+
+	.skills {
+		background-color: gray;
+	}
 
 
-</style>
+</style> 
 <body>
-		<div id="top">
-			<div id="title column">
-					<div id="name">Robert Graff</div>
-					<div id="job">Developer</div>
-			</div>
-		</div>
-		<nav>
+
+	<header class="blue left bottom">
+		<div id="name">Robert Graff</div>
+		<div id="job">Developer</div>
+	</header>
+
+		<nav class="bottom">
 		  <ul class="topnav">
+		    <li class="item"><a href="#">Home</a></li>
 		    <li class="item"><a href="#">Work</a></li>
-		    <li class="item"><a href="#">Contact</a></li>
 		    <li class="item"><a href="#">Resume</a></li>
+		    <li class="item"><a href="#">Contact</a></li>
 		  </ul>
 		</nav>
-		<div id="content" class="column">
-			<div id="about" class="section">
-					<div id="about-left"><img id="robPic" src="https://raw.githubusercontent.com/manofmetropolis/manofmetropolis.github.io/master/superRob.jpg"></div>
-					<div id="about-right">
-						<h3 class="yellow">Robert Graff: Mild-Mannered Developer</h3>
-						<p class="readable">After years of working as a mild-mannered copy editor and proofreader in the education and advertising sectors, Rob turned his focus to advancing his coding superpowers. And faster than a speeding bullet (Note: Check the copyright on that), Rob has now been designing and developing banners, digital assets, emails, and websites for the better part of two years.</p>
-					</div>
-			</div>
-			</div>
-		</div>
 
+	<div id="main" class="left">
+			<div class="section hero">
+				<img id="superRob" src="superRob.jpg">
+			</div>
+
+			<div class="section about blue">
+				<h2 class="title">Mild-Mannered Editor Turned Developer</h2>
+				<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="section work">
+				<div>Work Row 1</div>
+				<div>Work Row 2</div>
+			</div>
+
+			<div class="section skills">
+				Skills
+			</div>
+	</div>
 </body>
 </html>
