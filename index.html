@@ -11,13 +11,27 @@
 .yellow {background-color: yellow;}
 .cblue {background-color: cornflowerblue;}
 
-body, .header, nav, .intro, .portfolio {
-	margin: 0;
+body, .header, nav, .img, .about, .portfolio {
+	margin: 0 auto;
 	padding: 20px;
-	border: 1px solid black;
+	max-width: 800px;
 }
 
 #superRob {width: 100%;}
+
+@media screen and (min-width: 600px){
+	.flex-container {
+		display: flex;
+	}
+
+	.img {
+		flex: 0 1 300px;
+	}
+
+	.about {
+		flex: 0 1 300px;
+	}
+}
 
 </style> 
 <body>
@@ -36,7 +50,7 @@ body, .header, nav, .intro, .portfolio {
 		  </ul>
 		</nav>
 
-		<div class="intro left bottom red flex-tablet">
+		<div class="flex-container">
 
 			<div class="img">
 				<img id="superRob" src="superRob.jpg">
@@ -51,6 +65,7 @@ body, .header, nav, .intro, .portfolio {
 				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
+
 		</div>
 
 		<div class="portfolio green"></div>
