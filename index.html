@@ -5,22 +5,76 @@
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 <style>
-.blue {background-color: blue;}
-.red {background-color: red;}
-.green {background-color: green;}
-.yellow {background-color: yellow;}
-.cblue {background-color: cornflowerblue;}
 
-body, .header, nav, .img, .about, .portfolio {
+body, header, nav, .img, .about, .portfolio {
 	margin: 0 auto;
-	padding: 20px;
 	max-width: 800px;
+	background-color: black;
 }
+
+.img, header, .about, .portfolio {
+	padding: 20px;
+}
+
+header, nav, .title {
+	font-family: michroma;
+}
+
+ul {
+	list-style: none;
+}
+
+a {text-decoration: none; color: yellow;}
+
+#name{font-size: calc(14px + 3vw); line-height: 1.1;}
+#job{font-size: calc(12px + 2vw); line-height: 1.1;}
+
+.readable {font-family: helvetica;}
+.title {font-size: 22px; text-align: center;}
+
+.blue {color: #06a3d8;}
+.red {color: red;}
+.yellow {color: #f0dd14;}
+
+.left {border-left: 1px solid #d34c2c;}
+.right {border-right: 1px solid #d34c2c;}
+.bottom {border-bottom: 1px solid #d34c2c;}
 
 #superRob {width: 100%;}
 
+.work {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.workrow {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.workitem {
+	margin: 5px;
+	height: 150px;
+	width: 150px;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item {
+	width: 100%;
+	text-align: center;
+	order: 3;
+}
+
 @media screen and (min-width: 600px){
-	.flex-container {
+	.intro {
 		display: flex;
 	}
 
@@ -29,36 +83,48 @@ body, .header, nav, .img, .about, .portfolio {
 	}
 
 	.about {
-		flex: 0 1 300px;
+		flex: 1;
 	}
+
+	.menu {
+		justify-content: space-around;
+	}
+
+	.item {
+		display: block;
+		order: 1;
+		width: auto;
+	}
+
 }
 
 </style> 
 <body>
 
-	<header class="left bottom blue">
+	<header class="blue left bottom">
 		<div id="name">Robert Graff</div>
 		<div id="job">Developer</div>
 	</header>
 
-		<nav class="bottom cblue">
-		  <ul class="topnav">
-		    <li class="item"><a href="#">Home</a></li>
-		    <li class="item"><a href="#">Work</a></li>
-		    <li class="item"><a href="#">Resume</a></li>
-		    <li class="item"><a href="#">Contact</a></li>
-		  </ul>
-		</nav>
+	<nav class="bottom">
+	  <ul class="topnav menu yellow">
+	    <li class="item"><a href="#">Home</a></li>
+	    <li class="item"><a href="#">Work</a></li>
+	    <li class="item"><a href="#">Resume</a></li>
+	    <li class="item"><a href="#">Contact</a></li>
+	  </ul>
+	</nav>
 
-		<div class="flex-container">
+	<div id="main" class="left">
+		<div class="intro">
 
 			<div class="img">
 				<img id="superRob" src="superRob.jpg">
 			</div>
 
-			<div class="about">
-				<h2 class="title">Mild-Mannered Editor Turned Developer</h2>
-				<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<div class="about blue">
+				<div class="title">Mild-Mannered Editor<br>Turned Developer</div>
+				<p class="copy readable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -68,16 +134,20 @@ body, .header, nav, .img, .about, .portfolio {
 
 		</div>
 
-		<div class="portfolio green"></div>
-			<h2 class="title">Portfolio</h2>
-			
+		<div class="portfolio">
+			<div class="blue title">Portfolio</div>
 			<div class="work">
+				<div class="workrow">
 					<div class="workitem" style="background-color: blue;">Banners</div>
 					<div class="workitem" style="background: url(email_icon.jpg)no-repeat; background-size: contain;"></div>
-					<div class="workitem" style="background-color: green;">Video</div>
-					<div class="workitem" style="background-color: yellow;">Design</div>
+				</div>
+				<div class="workrow">
+					<div class="workitem" style="background-color: green;">Banners</div>
+					<div class="workitem" style="background: url(email_icon.jpg)no-repeat; background-size: contain;"></div>
+				</div>
 			</div>
-		</body>
+		</div>
+	</div>
 
 
 </body>
