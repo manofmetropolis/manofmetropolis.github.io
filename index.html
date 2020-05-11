@@ -5,125 +5,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 <style>
-	body {
-		margin: 0 auto;
-		max-width: 800px;
-		font-family: helvetica;
-		padding: 20px;
-		background-color: black;
+.blue {background-color: blue;}
+.red {background-color: red;}
+.green {background-color: green;}
+.yellow {background-color: yellow;}
+.cblue {background-color: cornflowerblue;}
+
+body, .header, nav, .intro, .portfolio {
+	margin: 0;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#superRob {width: 100%;}
+
+@media screen and (min-width: 640px) {
+	.flex-tablet {
+		display: flex;
 	}
 
-	header, .title, .copy {
-		padding: 15px 15px;
+	.img {
+    flex: 0 1 300px;
+    }
+
+	.about {
+    flex: 1;
 	}
-
-	header, .title, nav {
-		font-family: 'Michroma', sans-serif;
-	}
-
-	header, nav, p {
-		margin: 0;
-	}
-
-	.left {
-		border-left: 1px solid red;
-	}
-
-	.bottom {
-		border-bottom: 1px solid red;
-	}
-
-	#name {font-size: calc(14px + 3vw);}
-	#job {font-size: calc(14px + 2vw);}
-	.title {font-size: calc(10px + 2vw); margin: 0; text-align: center;}
-
-	.hero {
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	#superRob {
-		width: 60%;
-	}
-
-	.blue {
-		color: #2883BA;
-	}
-
-	nav a {
-		color: #FFEB00;
-		text-decoration: none;
-		font-size: 18px;
-	}
-
-	nav ul {list-style: none;}
-
-	.topnav {
-		margin: 0;
-  		display: flex;
-  		flex-wrap: wrap;
-  		align-items: center;
-  		justify-content: space-around;
-  		padding: 10px 0;
-  		border-right: 1px solid red;
-	}
-
-	.item{
-	  text-align: center;
-	}
-
-	.work {
-		height: 150px;
-	    display: flex;
-	    flex-direction: row;
-	    flex-wrap: wrap;
-	    justify-content: center;
-	    align-items: center;
-	}
-
-	.row {
-    	height: 160px;
-    	width: 320px;
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	justify-content: space-around;
-    	align-items: center;
-	}
-
-	.workitem {
-    	width: 150px;
-    	height: 150px;
-    	border-radius: 25% 25%;
-    	margin: 2px;
-    	text-align: center;
-	}
-
-	.skills {
-		background-color: gray;
-	}
-
-	@media (max-width: 600px) {
-		.work {
-			height: 150px;
-		    display: flex;
-		    flex-direction: column;
-		    flex-wrap: wrap;
-		    justify-content: center;
-		    align-items: center;
-		}
-	}
-
+}
 
 </style> 
 <body>
 
-	<header class="blue left bottom">
+	<header class="left bottom blue">
 		<div id="name">Robert Graff</div>
 		<div id="job">Developer</div>
 	</header>
 
-		<nav class="bottom">
+		<nav class="bottom cblue">
 		  <ul class="topnav">
 		    <li class="item"><a href="#">Home</a></li>
 		    <li class="item"><a href="#">Work</a></li>
@@ -132,15 +50,14 @@
 		  </ul>
 		</nav>
 
-	<div id="main">
-		<div id="intro" class="left bottom">
-			<h2 class="title blue">Mild-Mannered Editor Turned Developer</h2>
+		<div class="intro left bottom red flex-tablet">
 
-			<div class="hero">
+			<div class="img">
 				<img id="superRob" src="superRob.jpg">
 			</div>
 
-			<div class="about blue">
+			<div class="about">
+				<h2 class="title">Mild-Mannered Editor Turned Developer</h2>
 				<p class="copy">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -150,18 +67,17 @@
 			</div>
 		</div>
 
-			<h2 class="title blue">Portofolio</h2>
+		<div class="portfolio green"></div>
+			<h2 class="title">Portfolio</h2>
+			
 			<div class="work">
-				<div class="row">
 					<div class="workitem" style="background-color: blue;">Banners</div>
 					<div class="workitem" style="background: url(email_icon.jpg)no-repeat; background-size: contain;"></div>
-				</div>
-				<div class="row">
 					<div class="workitem" style="background-color: green;">Video</div>
 					<div class="workitem" style="background-color: yellow;">Design</div>
-				</div>
 			</div>
+		</body>
 
-	</div>
+
 </body>
 </html>
