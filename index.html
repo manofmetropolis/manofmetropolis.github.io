@@ -1,154 +1,67 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-</head>
-<style>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Robert Graff: Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header left bottom title blue">
+                <div class="name">Robert Graff</div>
+                <div class="job">Developer</div>
+        </div>
 
-body, header, nav, .img, .about, .portfolio {
-	margin: 0 auto;
-	max-width: 800px;
-	background-color: black;
-}
+        <nav class="bottom">
+		  <ul class="menu right">
+		    <li class="item"><a href="#">Home</a></li>
+		    <li class="item"><a href="#">Work</a></li>
+		    <li class="item"><a href="#">Resume</a></li>
+		    <li class="item"><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+        
+        <!-- Main Content -->
+        <main class="left">
 
-.img, header, .about, .portfolio {
-	padding: 20px;
-}
+            <!-- Hero -->
+            <div class="hero">
 
-header, nav, .title {
-	font-family: michroma;
-}
+            </div>
 
-ul {
-	list-style: none;
-}
+            <div class="flex-container wrapper">
 
-a {text-decoration: none; color: yellow;}
+                <!-- Content -->
+                <div class="content">
+					<div class="hero-img"><img id="superRob" src="superRob.jpg"></div>            
+                </div>
 
-#name{font-size: calc(14px + 3vw); line-height: 1.1;}
-#job{font-size: calc(12px + 2vw); line-height: 1.1;}
+                <!-- Sidebar -->
+                <div class="sidebar blue">              
+                    <div class="title textCenter">
+                        Mild-Mannered Editor Turned Devloper
+                    </div>
+                    <div class="copy">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus est exemplis hoc facere longius. At Zeno eum non beatum modo, sed etiam divitem dicere ausus est. Nunc ita separantur, ut disiuncta sint, quo nihil potest esse perversius. Itaque quantum adiit periculum!
+                    </div>
+                </div>
 
-.readable {font-family: helvetica;}
-.title {font-size: 22px; text-align: center;}
+            </div>
 
-.blue {color: #06a3d8;}
-.red {color: red;}
-.yellow {color: #f0dd14;}
+            <div class="portfolio">
+            	<div class="title blue textCenter">
+                    Portfolio
+                </div>
+            	<div class="work-row">
+            		<div class="work-item"></div>
+            		<div class="work-item"></div>
+            		<div class="work-item"></div>
+            		<div class="work-item"></div>
+            	</div>
+            </div>
 
-.left {border-left: 1px solid #d34c2c;}
-.right {border-right: 1px solid #d34c2c;}
-.bottom {border-bottom: 1px solid #d34c2c;}
+        </main>
 
-#superRob {width: 100%;}
-
-.work {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.workrow {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.workitem {
-	margin: 5px;
-	height: 150px;
-	width: 150px;
-}
-
-.menu {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.item {
-	width: 100%;
-	text-align: center;
-	order: 3;
-}
-
-@media screen and (min-width: 600px){
-	.intro {
-		display: flex;
-	}
-
-	.img {
-		flex: 0 1 300px;
-	}
-
-	.about {
-		flex: 1;
-	}
-
-	.menu {
-		justify-content: space-around;
-	}
-
-	.item {
-		display: block;
-		order: 1;
-		width: auto;
-	}
-
-}
-
-</style> 
-<body>
-
-	<header class="blue left bottom">
-		<div id="name">Robert Graff</div>
-		<div id="job">Developer</div>
-	</header>
-
-	<nav class="bottom">
-	  <ul class="topnav menu yellow">
-	    <li class="item"><a href="#">Home</a></li>
-	    <li class="item"><a href="#">Work</a></li>
-	    <li class="item"><a href="#">Resume</a></li>
-	    <li class="item"><a href="#">Contact</a></li>
-	  </ul>
-	</nav>
-
-	<div id="main" class="left">
-		<div class="intro">
-
-			<div class="img">
-				<img id="superRob" src="superRob.jpg">
-			</div>
-
-			<div class="about blue">
-				<div class="title">Mild-Mannered Editor<br>Turned Developer</div>
-				<p class="copy readable">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-
-		</div>
-
-		<div class="portfolio">
-			<div class="blue title">Portfolio</div>
-			<div class="work">
-				<div class="workrow">
-					<div class="workitem" style="background-color: blue;">Banners</div>
-					<div class="workitem" style="background: url(email_icon.jpg)no-repeat; background-size: contain;"></div>
-				</div>
-				<div class="workrow">
-					<div class="workitem" style="background-color: green;">Banners</div>
-					<div class="workitem" style="background: url(email_icon.jpg)no-repeat; background-size: contain;"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-</body>
+    </body>
 </html>
