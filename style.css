@@ -51,7 +51,14 @@ a {
 	max-width:75rem
 }*/
 
-.right-side, .header, main, .left-side, .portfolio, .copy, .disclaimer, .philosophy {
+main,
+.header,
+.left-side, .right-side,
+.portfolio,
+.copy,
+.disclaimer,
+.philosophy
+.head-img {
 	display:block;
 	padding: 10px;
 }
