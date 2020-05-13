@@ -71,25 +71,10 @@ a {
 	height: 150px;
 	background-color: white;
 	border-radius: 15%;
-}
-@media screen and (min-width:640px){
-	.flex-container{
-		display:flex;
-		justify-content: space-around;
-		align-items: center;
-}
-}
-.content{
-	flex:1;
-	flex:0 1 300px;
-}
-.sidebar{
-	flex: 1;
-}
-.footer,.sidebar{
-	border:1px solid #000
+	overflow: hidden;
 }
 
+.work-item img {width: 100%;}
 #superRob {width: 100%;}
 
 .left{border-left: 1px solid #e04622;}
@@ -97,3 +82,26 @@ a {
 .right{border-right: 1px solid #e04622;}
 
 .textCenter {text-align: center;}
+
+@media screen and (min-width:640px){
+	.flex-container{
+		display:flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.item {
+		display: block;
+		width: auto;
+	}
+}
+
+.left-side{
+	flex:1;
+	flex:0 1 300px;
+}
+.right-side{
+	flex: 1;
+}
+
+
