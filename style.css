@@ -21,33 +21,42 @@ a {
 	font-family: 'Michroma', sans-serif;
 }
 
-.copy {padding: 20px;}
-
 .blue {color: #1c9ed8;}
 .yellow {color: #e1d950;}
 
-.name {font-size: calc(14px + 3vw);}
-.job {font-size: calc(14px + 2vw);}
+.name {font-size: 40px;}
+.job {font-size: 32px;}
 
-.title {font-family: 'Michroma', sans-serif; font-size: calc(12px + 2vw);}
+.title {font-family: 'Michroma', sans-serif; font-size: 30px;}
+.copy {font-size: 16px; text-align: center;}
+.disclaimer {font-size: 14px; text-align: center;}
 
 .menu {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 	padding: 10px;
 }
 
-.wrapper{
+.item {
+	width: 100%;
+	text-align: center;
+}
+
+
+/*.wrapper{
 	margin:auto;
 	max-width:75rem
-}
-.sidebar,footer,.header,main,.hero, .content, .portfolio{
+}*/
+
+.right-side, .header, main, .left-side, .portfolio, .copy, .disclaimer, .philosophy {
 	display:block;
-	margin:0;
-	padding: 5px;
+	padding: 10px;
 }
+
+.flex-container, .philosophy, .portfolio {margin-bottom: 20px;}
 
 .work-row {
 	display: flex;
