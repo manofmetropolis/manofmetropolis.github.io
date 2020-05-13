@@ -104,4 +104,9 @@ a {
 	flex: 1;
 }
 
-
+/*STYLES FOR EMAILS PAGE*/
+.head-img {background-color: blue;}
+.email-1 {background-color: green;}
+.email-2 {background-color: yellow;}
+.email-3{background-color: orange;}
+.textbox {background-color: white;}
