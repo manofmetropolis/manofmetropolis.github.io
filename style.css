@@ -63,29 +63,29 @@ main,
 .portfolio,
 .copy,
 .disclaimer,
-.philosophy
+.philosophy,
 .head-img {
 	display:block;
-	padding: 10px;
+	padding: 20px;
 }
-
-.philosophy, .portfolio {margin-bottom: 20px;}
 
 .work-row {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
 .work-item {
-	margin-top: 10px;
+	margin: 15px;
 	width: 150px;
 	height: 150px;
 	background-color: white;
 	border-radius: 15%;
 	overflow: hidden;
 }
+
+.work-item:hover {border: 1px solid #e04622;}
 
 .work-item img,
 #superRob,
