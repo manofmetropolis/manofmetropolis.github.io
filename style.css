@@ -150,5 +150,6 @@ main,
 
 	.page-title-mobile {
 		display: none;
+		margin: 0;
 	}
 }
