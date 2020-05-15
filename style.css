@@ -18,12 +18,17 @@ ul {
 
 a {
 	text-decoration: none;
-	color: #e1d950;
 	font-family: 'Michroma', sans-serif;
+	color: #e1d950;
 }
+
+a:hover {
+	color: #e04622;
+	}
 
 .blue {color: #1c9ed8;}
 .yellow {color: #e1d950;}
+.red {color: #e04622;}
 
 .name {font-size: 40px;}
 .job {font-size: 32px;}
