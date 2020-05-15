@@ -87,8 +87,11 @@ main,
 	overflow: hidden;
 }
 
-.work-item img {width: 100%;}
-#superRob {width: 100%;}
+.work-item img,
+#superRob,
+.email-img {
+	width: 100%;
+}
 
 .left{border-left: 1px solid #e04622;}
 .bottom{border-bottom: 1px solid #e04622;}
