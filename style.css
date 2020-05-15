@@ -69,7 +69,7 @@ main,
 	padding: 10px;
 }
 
-.flex-container, .philosophy, .portfolio {margin-bottom: 20px;}
+.philosophy, .portfolio {margin-bottom: 20px;}
 
 .work-row {
 	display: flex;
