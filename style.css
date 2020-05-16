@@ -124,8 +124,10 @@ main,
 
 .email-head {
 	background: url(./assets/emails/head-img.jpg)no-repeat;
+}
 
 #left-side-email{
+	
 	flex: 0 2 400px;
 }
 #right-side-email{
