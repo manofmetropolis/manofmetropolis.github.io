@@ -141,7 +141,6 @@ body, html{margin:0; padding:0;}
 </head>
 <body>
 <div id="wrapper">
-	<a href="javascript:void(window.open(window.clickTag, '_blank'))" id="clickArea"></a>
 	<div id="content">
 		<div class="bg"><img src="bg.jpg"></div>
 		<!--html elements/sprites go here-->
@@ -162,7 +161,7 @@ body, html{margin:0; padding:0;}
 	</div>
 </div>
 <script>	
-	(function(){
+	function animate(){
 		var t1=new TimelineLite();
 		//animate banner
 		t1
@@ -189,10 +188,9 @@ body, html{margin:0; padding:0;}
 
 		.from([".end-copy", ".cta"], 0.25, {x: -270}, "+=0.25")
 
-        .pause(12);
 
 		console.log("length: "+t1.duration());
-	}()); //<--timeline self-executes on load
+	}; //<--timeline self-executes on load
 </script>
 </body>
 </html>
