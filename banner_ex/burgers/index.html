@@ -158,10 +158,11 @@ body, html{margin:0; padding:0;}
 		<div class="sprite pack2 center"></div>
 
         <div class="sprite logo"></div>
+        <div class="static"><img src="static.jpg"></div>
 	</div>
 </div>
-<script>	
-	(function(){
+<script>
+	function playBanner(){
 		var t1=new TimelineLite();
 		//animate banner
 		t1
@@ -169,6 +170,7 @@ body, html{margin:0; padding:0;}
 		.set([".copy1, .copy2", ".copy3", ".copy4"], {opacity: 0})
 		.set(".r-and-r", {x: -250})
 		//FRAME 1
+        .to(".static", 0.01, {opacity: 0})
 		.from(".pack", 0.5, {x: 300, ease:Power1.easeInOut}, "-0.25")
 
 		//FRAME 2
