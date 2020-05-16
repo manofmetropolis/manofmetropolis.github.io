@@ -135,6 +135,8 @@ main,
 	padding: 25px 0;
 }
 
+.email-img {padding-top: 10px;}
+
 @media screen and (min-width:640px){
 	.flex-container{
 		display:flex;
