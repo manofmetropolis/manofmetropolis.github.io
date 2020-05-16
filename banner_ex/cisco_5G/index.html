@@ -1,0 +1,508 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=600">
+<meta name="viewport" content="width=device-width">
+<title>300x600</title>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+<script>
+	var clickTag="http://www.google.com";
+</script>
+<style>
+@font-face {
+  font-family: 'CiscoSans-ExtraLight';
+  src: url('./CiscoSans-ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html{margin:0; padding:0;}
+#wrapper{width:300px; height:600px; overflow:hidden; background:#ffffff; position:relative;}
+#clickArea{display:block; width:298px; height:598px; border:1px solid #cccccc; z-index:1000; cursor:pointer; position:absolute;}
+#content{position:relative; top:0; left:0; width:300px; height:600px;}
+.sprite{position: absolute;}
+.center {left:0; right:0; margin:0 auto;}
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: calc(561px/2) calc(378px/2);
+}
+
+.sprite-5_bottom {
+    width: calc(99px/2);
+    height: calc(120px/2);
+    background-position: calc(0px/2) calc(0px/2);
+}
+
+.sprite-5_top {
+    width: calc(93px/2);
+    height: calc(46px/2);
+    background-position: calc(-99px/2) calc(0px/2);
+}
+
+.sprite-6_bottom {
+    width: calc(94px/2);
+    height: calc(114px/2);
+    background-position: calc(-192px/2) calc(0px/2);
+}
+
+.sprite-6_top {
+    width: calc(76px/2);
+    height: calc(106px/2);
+    background-position: calc(-286px/2) calc(0px/2);
+}
+
+.sprite-F_crossbar {
+    width: calc(99px/2);
+    height: calc(47px/2);
+    background-position: calc(-286px/2) calc(-106px/2);
+}
+
+.sprite-F_spine {
+    width: calc(50px/2);
+    height: calc(168px/2);
+    background-position: calc(0px/2) calc(-153px/2);
+}
+
+.sprite-F_top {
+    width: calc(102px/2);
+    height: calc(47px/2);
+    background-position: calc(-50px/2) calc(-153px/2);
+}
+
+.sprite-G_bar {
+    width: calc(73px/2);
+    height: calc(26px/2);
+    background-position: calc(-99px/2) calc(-106px/2);
+}
+
+.sprite-G_body {
+    width: calc(98px/2);
+    height: calc(173px/2);
+    background-position: calc(-152px/2) calc(-153px/2);
+}
+
+.sprite-G_crossbar {
+    width: calc(73px/2);
+    height: calc(26px/2);
+    background-position: calc(-250px/2) calc(-153px/2);
+}
+
+.sprite-amp_blue {
+    width: calc(123px/2);
+    height: calc(148px/2);
+    background-position: calc(-250px/2) calc(-179px/2);
+}
+
+.sprite-amp_red {
+    width: calc(105px/2);
+    height: calc(92px/2);
+    background-position: calc(-362px/2) calc(0px/2);
+}
+
+.sprite-dash {
+    width: calc(53px/2);
+    height: calc(23px/2);
+    background-position: calc(-385px/2) calc(-92px/2);
+}
+
+.sprite-fi_i_body {
+    width: calc(48px/2);
+    height: calc(115px/2);
+    background-position: calc(-438px/2) calc(-92px/2);
+}
+
+.sprite-fi_i_dot {
+    width: calc(51px/2);
+    height: calc(54px/2);
+    background-position: calc(-50px/2) calc(-207px/2);
+}
+
+.sprite-w_blue_1 {
+    width: calc(52px/2);
+    height: calc(167px/2);
+    background-position: calc(-373px/2) calc(-207px/2);
+}
+
+.sprite-w_blue_2 {
+    width: calc(37px/2);
+    height: calc(168px/2);
+    background-position: calc(-101px/2) calc(-207px/2);
+}
+
+.sprite-w_pink_1 {
+    width: calc(75px/2);
+    height: calc(171px/2);
+    background-position: calc(-425px/2) calc(-207px/2);
+}
+
+.sprite-w_pink_2 {
+    width: calc(75px/2);
+    height: calc(172px/2);
+    background-position: calc(-486px/2) calc(0px/2);
+}
+
+.sprite-wi_i_body {
+    width: calc(49px/2);
+    height: calc(118px/2);
+    background-position: calc(-500px/2) calc(-172px/2);
+}
+
+.sprite-wi_i_dot {
+    width: calc(53px/2);
+    height: calc(53px/2);
+    background-position: calc(-500px/2) calc(-290px/2);
+}
+
+
+
+/*--separate styles for positioning your elements--*/
+.bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 600px;
+}
+
+.sprite-cta {
+    display: block;
+    border-radius: 26px;
+    background: rgb(0, 188, 235);
+    font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    top: 460px;
+    text-align: center;
+    left: 16px;
+}
+
+#logo {
+    position: absolute;
+    width: 77px; 
+    height: 41px;
+    bottom: 15px;
+    left: 17px;
+    fill: #05bdeb;
+}
+
+#five_g {
+    position: absolute;
+    height: 85px;
+    width: 100px;
+    top: 20px;
+    left: 16px;
+}
+
+.sprite-5_top {
+    top: 0px;
+    left: 0px;
+}
+
+.sprite-5_bottom {
+    top: 25px;
+    left: 0px;
+}
+
+.sprite-G_body {
+    top: -2px;
+    left: 50px;
+}
+
+.sprite-G_crossbar {
+    top: 38px;
+    left: 62px;
+}
+
+#amp {
+    position: absolute;
+    top: 27px;
+    left: 163px;
+}
+
+.sprite-amp_blue {
+    top: 0;
+    left: 0;
+}
+
+.sprite-amp_red {
+    top: 27px;
+    left: -1px;
+}
+
+#wi{
+    position: absolute;
+    height: 87px;
+    width: 135px;
+    top: 112px;
+    left: 15px;
+}
+
+.sprite-w_blue_1{
+    top: 0;
+    left: 0;
+}
+
+.sprite-w_pink_1{
+    top: 0;
+    left: 15px;
+}
+
+.sprite-w_blue_2{
+    top: 0;
+    left: 40px;
+}
+
+.sprite-w_pink_2{
+    top: 0;
+    left: 47px;
+}
+
+.sprite-wi_i_body {
+    top: 28px;
+    left: 82px;
+}
+
+.sprite-wi_i_dot {
+    top: 0px;
+    left: 81px;
+}
+
+.sprite-dash {
+    top: 33px;
+    left: 108px;
+}
+
+#fi_6{
+    position: absolute;
+    height: 87px;
+    width: 130px;
+    top: 112px;
+    left: 152px;
+}
+
+.sprite-F_crossbar {
+    top: 30px;
+    left: 00px;
+}
+
+.sprite-F_spine {
+    top: 2px;
+    left: 0px;
+}
+
+.sprite-F_top {
+    top: 0px;
+    left: 0px;
+}
+
+.sprite-fi_i_body {
+    top: 27px;
+    left: 51px;
+}
+
+.sprite-fi_i_dot {
+    top: 0px;
+    left: 51px;
+}
+
+.sprite-6_top {
+	top: 2px;
+	left: 83px;
+}
+
+.sprite-6_bottom {
+	top: 30px;
+	left: 82px;
+}
+
+#txt1, #txt2 {
+    font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    position: absolute;
+}
+
+#txt1 {
+    font-size: 32px;
+    line-height: 38px;
+    color: #00bceb;
+    top: 206px;
+    left: 17px;
+}
+
+#txt2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #686868;
+    top: 324px;
+    left: 16px;
+}
+
+.sprite-tag {
+    font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    position: absolute;
+    bottom: 18px;
+    left: 112px;
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-align: center;
+    color: #00bceb;
+}
+
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="content" onclick="go()">
+
+		<img class="bg" src="bg.jpg">
+		<div class="sprite-cta">Watch video</div>
+        <div class="sprite-tag">The bridge to possible</div>
+
+		<div id="color_txt">
+            <div id="five_g">
+    			<div class="sprite sprite-5_top"></div>
+                <div class="sprite sprite-5_bottom"></div>
+                <div class="sprite sprite-G_body"></div>
+                <div class="sprite sprite-G_crossbar"></div>
+            </div>
+
+            <div id="amp">
+                <div class="sprite sprite-amp_blue"></div>
+                <div class="sprite sprite-amp_red"></div>
+            </div>
+
+            <div id="wi">
+                <div class="sprite sprite-w_blue_1"></div>
+                <div class="sprite sprite-w_blue_2"></div>                
+                <div class="sprite sprite-w_pink_1"></div>
+                <div class="sprite sprite-w_pink_2"></div>
+
+                <div class="sprite sprite-wi_i_body"></div>
+                <div class="sprite sprite-wi_i_dot"></div>
+
+                <div class="sprite sprite-dash"></div>
+            </div>
+
+            <div id="fi_6">
+                <div class="sprite sprite-F_crossbar"></div>
+                <div class="sprite sprite-F_spine"></div>
+                <div class="sprite sprite-F_top"></div>
+
+                <div class="sprite sprite-fi_i_body"></div>
+                <div class="sprite sprite-fi_i_dot"></div>
+
+                <div class="sprite sprite-6_top"></div>
+                <div class="sprite sprite-6_bottom"></div>
+            </div>
+
+<!-- svg logo -->
+            <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 72.2 38.5" style="enable-background:new 0 0 72.2 38.5;" xml:space="preserve">
+            <g>
+                <g>
+                    <g>
+                        <rect x="20.5" y="25.6" class="st0" width="3.2" height="12.5"/>
+                        <path class="st0" d="M49.1,29.2c-0.1-0.1-1.1-0.7-2.7-0.7c-2,0-3.5,1.4-3.5,3.3c0,1.9,1.4,3.3,3.5,3.3c1.5,0,2.5-0.6,2.7-0.7v3.4
+                            c-0.4,0.1-1.5,0.4-2.9,0.4c-3.6,0-6.7-2.4-6.7-6.5c0-3.7,2.8-6.5,6.7-6.5c1.5,0,2.6,0.4,2.9,0.4V29.2z"/>
+                        <path class="st0" d="M16.2,29.2c-0.1-0.1-1.1-0.7-2.7-0.7c-2,0-3.5,1.4-3.5,3.3c0,1.9,1.4,3.3,3.5,3.3c1.5,0,2.5-0.6,2.7-0.7v3.4
+                            c-0.4,0.1-1.5,0.4-2.9,0.4c-3.5,0-6.7-2.4-6.7-6.5c0-3.7,2.8-6.5,6.7-6.5c1.5,0,2.6,0.4,2.9,0.4V29.2z"/>
+                        <path class="st0" d="M65.7,31.9c0,3.6-2.8,6.5-6.6,6.5c-3.8,0-6.6-2.9-6.6-6.5c0-3.6,2.8-6.5,6.6-6.5
+                            C62.9,25.4,65.7,28.3,65.7,31.9z M59,28.6c-1.9,0-3.3,1.5-3.3,3.3c0,1.8,1.4,3.3,3.3,3.3c1.9,0,3.3-1.5,3.3-3.3
+                            C62.3,30.1,60.9,28.6,59,28.6z"/>
+                        <path class="st0" d="M35.6,28.5c0,0-1.4-0.4-2.5-0.4c-1.3,0-2,0.4-2,1c0,0.8,0.9,1,1.4,1.2l0.9,0.3c2,0.7,3,2.1,3,3.6
+                            c0,3.1-2.8,4.2-5.2,4.2c-1.7,0-3.3-0.3-3.4-0.3v-2.9c0.3,0.1,1.6,0.5,3,0.5c1.6,0,2.3-0.5,2.3-1.2c0-0.6-0.6-1-1.4-1.2
+                            c-0.2-0.1-0.5-0.2-0.7-0.2c-1.8-0.6-3.2-1.6-3.2-3.7c0-2.3,1.8-3.9,4.7-3.9c1.5,0,3,0.4,3.1,0.4V28.5z"/>
+                    </g>
+                </g>
+                <path class="st0" d="M3.3,12.2c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v3.3c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6
+                    V12.2z"/>
+                <path class="st0" d="M11.9,7.9c0-0.9-0.7-1.6-1.6-1.6C9.4,6.3,8.7,7,8.7,7.9v7.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V7.9z
+                    "/>
+                <path class="st0" d="M20.5,2c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v16.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V2z"
+                    />
+                <path class="st0" d="M29.1,7.9c0-0.9-0.7-1.6-1.6-1.6C26.7,6.3,26,7,26,7.9v7.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V7.9z"
+                    />
+                <path class="st0" d="M37.7,12.2c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v3.3c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6
+                    V12.2z"/>
+                <path class="st0" d="M46.3,7.9c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v7.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V7.9
+                    z"/>
+                <path class="st0" d="M54.9,2c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v16.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V2z"
+                    />
+                <path class="st0" d="M63.5,7.9c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v7.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6V7.9
+                    z"/>
+                <path class="st0" d="M72.1,12.2c0-0.9-0.7-1.6-1.6-1.6c-0.9,0-1.6,0.7-1.6,1.6v3.3c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6
+                    V12.2z"/>
+            </g>
+            </svg>        
+        <!-- /svg logo -->
+
+            <div id="txt1">
+            	Yes.<br>
+                And it&rsquo;s only<br>
+                from Cisco.
+            </div>
+
+            <div id="txt2">
+            	See how<br>
+                Cisco&rsquo;s<br>
+                Intent-Based<br>
+            	Networking<br>
+                is ready for both.
+            </div>
+
+
+		</div>
+
+	</div>
+</div>
+
+<script>    
+    function go (){
+        var t1=new TimelineLite();
+        //animate banner
+        t1
+         .from(".bg", 1, {opacity: 0})
+
+         .from(".sprite-5_bottom", 0.25, {opacity: 0, ease: Power1.easeInOut}, "+=.25")
+         .from(".sprite-6_bottom", 0.25, {opacity: 0, ease: Power1.easeInOut})
+         .from(".sprite-dash", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-F_top", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-w_pink_2", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-fi_i_dot", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-F_crossbar", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-w_blue_2", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-6_top", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-wi_i_dot", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-w_pink_1", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-G_body", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-wi_i_body", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-F_spine", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-G_crossbar", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-w_blue_1", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-5_top", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-fi_i_body", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+         .from(".sprite-amp_blue", 0.25, {opacity: 0, ease: Power1.easeInOut}, "+=.75")
+         .from(".sprite-amp_red", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
+
+         .from("#txt1", 0.5, {opacity: 0}, "+=1")
+         .from("#txt2", 0.5, {opacity: 0}, "+=1")
+
+         .from(["#logo", ".sprite-tag"], 0.5, {opacity:0}, "+=1.25")
+         .from(".sprite-cta", 0.5, {opacity: 0}, "+=1")
+        }
+         // .pause(4)
+        ;
+</script>
+
+</body>
+</html>
