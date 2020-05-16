@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="ad.size" content="width=300,height=600">
+<meta name="ad.size" content="width=300,height=250">
 <meta name="viewport" content="width=device-width">
-<title>300x600</title>
+<title>300x250</title>
 <script src="TweenLite.min.js"></script>
 <script src="TimelineLite.min.js"></script>
 <script src="CSSPlugin.min.js"></script>
@@ -20,9 +20,9 @@
 }
 
 body, html{margin:0; padding:0;}
-#wrapper{width:300px; height:600px; overflow:hidden; background:#ffffff; position:relative;}
-#clickArea{display:block; width:298px; height:598px; border:1px solid #cccccc; z-index:1000; cursor:pointer; position:absolute;}
-#content{position:relative; top:0; left:0; width:300px; height:600px;}
+#wrapper{width:300px; height:250px; overflow:hidden; background:#ffffff; position:relative;}
+#clickArea{display:block; width:298px; height:248px; border:1px solid #cccccc; z-index:1000; cursor:pointer; position:absolute;}
+#content{position:relative; top:0; left:0; width:300px; height:250px;}
 .sprite{position: absolute;}
 .center {left:0; right:0; margin:0 auto;}
 
@@ -30,135 +30,128 @@ body, html{margin:0; padding:0;}
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
-    background-size: calc(561px/2) calc(378px/2);
+    background-size: calc(325px/2) calc(379px/2);
 }
 
 .sprite-5_bottom {
-    width: calc(99px/2);
-    height: calc(120px/2);
+    width: calc(74px/2);
+    height: calc(89px/2);
     background-position: calc(0px/2) calc(0px/2);
 }
 
 .sprite-5_top {
-    width: calc(93px/2);
-    height: calc(46px/2);
-    background-position: calc(-99px/2) calc(0px/2);
+    width: calc(69px/2);
+    height: calc(34px/2);
+    background-position: calc(-74px/2) calc(0px/2);
 }
 
 .sprite-6_bottom {
-    width: calc(94px/2);
-    height: calc(114px/2);
-    background-position: calc(-192px/2) calc(0px/2);
+    width: calc(69px/2);
+    height: calc(84px/2);
+    background-position: calc(-143px/2) calc(0px/2);
 }
 
 .sprite-6_top {
-    width: calc(76px/2);
-    height: calc(106px/2);
-    background-position: calc(-286px/2) calc(0px/2);
+    width: calc(56px/2);
+    height: calc(78px/2);
+    background-position: calc(-212px/2) calc(0px/2);
 }
 
 .sprite-F_crossbar {
-    width: calc(99px/2);
-    height: calc(47px/2);
-    background-position: calc(-286px/2) calc(-106px/2);
+    width: calc(75px/2);
+    height: calc(34px/2);
+    background-position: calc(-212px/2) calc(-78px/2);
 }
 
 .sprite-F_spine {
-    width: calc(50px/2);
-    height: calc(168px/2);
-    background-position: calc(0px/2) calc(-153px/2);
+    width: calc(34px/2);
+    height: calc(124px/2);
+    background-position: calc(0px/2) calc(-112px/2);
 }
 
 .sprite-F_top {
-    width: calc(102px/2);
-    height: calc(47px/2);
-    background-position: calc(-50px/2) calc(-153px/2);
-}
-
-.sprite-G_bar {
-    width: calc(73px/2);
-    height: calc(26px/2);
-    background-position: calc(-99px/2) calc(-106px/2);
+    width: calc(75px/2);
+    height: calc(35px/2);
+    background-position: calc(-34px/2) calc(-112px/2);
 }
 
 .sprite-G_body {
-    width: calc(98px/2);
-    height: calc(173px/2);
-    background-position: calc(-152px/2) calc(-153px/2);
+    width: calc(73px/2);
+    height: calc(129px/2);
+    background-position: calc(-109px/2) calc(-112px/2);
 }
 
 .sprite-G_crossbar {
-    width: calc(73px/2);
-    height: calc(26px/2);
-    background-position: calc(-250px/2) calc(-153px/2);
+    width: calc(54px/2);
+    height: calc(19px/2);
+    background-position: calc(-74px/2) calc(-78px/2);
 }
 
 .sprite-amp_blue {
-    width: calc(123px/2);
-    height: calc(148px/2);
-    background-position: calc(-250px/2) calc(-179px/2);
+    width: calc(92px/2);
+    height: calc(110px/2);
+    background-position: calc(-182px/2) calc(-112px/2);
 }
 
 .sprite-amp_red {
-    width: calc(105px/2);
-    height: calc(92px/2);
-    background-position: calc(-362px/2) calc(0px/2);
+    width: calc(78px/2);
+    height: calc(69px/2);
+    background-position: calc(-182px/2) calc(-222px/2);
 }
 
 .sprite-dash {
-    width: calc(53px/2);
-    height: calc(23px/2);
-    background-position: calc(-385px/2) calc(-92px/2);
+    width: calc(40px/2);
+    height: calc(17px/2);
+    background-position: calc(-34px/2) calc(-222px/2);
 }
 
 .sprite-fi_i_body {
-    width: calc(48px/2);
-    height: calc(115px/2);
-    background-position: calc(-438px/2) calc(-92px/2);
+    width: calc(36px/2);
+    height: calc(86px/2);
+    background-position: calc(-287px/2) calc(0px/2);
 }
 
 .sprite-fi_i_dot {
-    width: calc(51px/2);
-    height: calc(54px/2);
-    background-position: calc(-50px/2) calc(-207px/2);
+    width: calc(38px/2);
+    height: calc(40px/2);
+    background-position: calc(-287px/2) calc(-86px/2);
 }
 
 .sprite-w_blue_1 {
-    width: calc(52px/2);
-    height: calc(167px/2);
-    background-position: calc(-373px/2) calc(-207px/2);
+    width: calc(38px/2);
+    height: calc(125px/2);
+    background-position: calc(-274px/2) calc(-126px/2);
 }
 
 .sprite-w_blue_2 {
-    width: calc(37px/2);
-    height: calc(168px/2);
-    background-position: calc(-101px/2) calc(-207px/2);
+    width: calc(28px/2);
+    height: calc(125px/2);
+    background-position: calc(0px/2) calc(-251px/2);
 }
 
 .sprite-w_pink_1 {
-    width: calc(75px/2);
-    height: calc(171px/2);
-    background-position: calc(-425px/2) calc(-207px/2);
+    width: calc(56px/2);
+    height: calc(128px/2);
+    background-position: calc(-28px/2) calc(-251px/2);
 }
 
 .sprite-w_pink_2 {
-    width: calc(75px/2);
-    height: calc(172px/2);
-    background-position: calc(-486px/2) calc(0px/2);
+    width: calc(56px/2);
+    height: calc(128px/2);
+    background-position: calc(-84px/2) calc(-251px/2);
 }
 
 .sprite-wi_i_body {
-    width: calc(49px/2);
-    height: calc(118px/2);
-    background-position: calc(-500px/2) calc(-172px/2);
+    width: calc(37px/2);
+    height: calc(88px/2);
+    background-position: calc(-140px/2) calc(-251px/2);
 }
 
 .sprite-wi_i_dot {
-    width: calc(53px/2);
-    height: calc(53px/2);
-    background-position: calc(-500px/2) calc(-290px/2);
+    width: calc(39px/2);
+    height: calc(40px/2);
+    background-position: calc(-260px/2) calc(-251px/2);
 }
-
 
 
 /*--separate styles for positioning your elements--*/
@@ -167,65 +160,63 @@ body, html{margin:0; padding:0;}
 	top: 0px;
 	left: 0px;
 	width: 300px;
-	height: 600px;
+	height: 250px;
 }
 
 .sprite-cta {
     display: block;
-    border-radius: 26px;
+    border-radius: 15px;
     background: rgb(0, 188, 235);
     font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
     position: absolute;
-    font-size: 16px;
+    font-size: 10px;
     color: white;
-    padding: 8px 16px;
+    padding: 6px 12px;
     border: none;
-    top: 460px;
+    top: 214px;
     text-align: center;
-    left: 16px;
+    right: 12px;
 }
 
 #logo {
     position: absolute;
-    width: 77px; 
-    height: 41px;
-    bottom: 15px;
-    left: 17px;
+    width: 49px;
+    height: 26.13px; 
+    bottom: 10px;
+    left: 15px;
     fill: #05bdeb;
 }
 
 #five_g {
     position: absolute;
-    height: 85px;
-    width: 100px;
-    top: 20px;
-    left: 16px;
+    top: 14px;
+    left: 13px;
 }
 
 .sprite-5_top {
     top: 0px;
-    left: 0px;
+    left: 2px;
 }
 
 .sprite-5_bottom {
-    top: 25px;
-    left: 0px;
+    top: 18px;
+    left: 2px;
 }
 
 .sprite-G_body {
-    top: -2px;
-    left: 50px;
+    top: -1px;
+    left: 38px;
 }
 
 .sprite-G_crossbar {
-    top: 38px;
-    left: 62px;
+    top: 28px;
+    left: 48px;
 }
 
 #amp {
     position: absolute;
-    top: 27px;
-    left: 163px;
+    top: 19px;
+    left: 123px;
 }
 
 .sprite-amp_blue {
@@ -234,16 +225,14 @@ body, html{margin:0; padding:0;}
 }
 
 .sprite-amp_red {
-    top: 27px;
-    left: -1px;
+    top: 19px;
+    left: 0px;
 }
 
-#wi{
+#wi {
     position: absolute;
-    height: 87px;
-    width: 135px;
-    top: 112px;
-    left: 15px;
+    top: 83px;
+    left: 14px;
 }
 
 .sprite-w_blue_1{
@@ -253,105 +242,107 @@ body, html{margin:0; padding:0;}
 
 .sprite-w_pink_1{
     top: 0;
-    left: 15px;
+    left: 11px;
 }
 
 .sprite-w_blue_2{
     top: 0;
-    left: 40px;
+    left: 31px;
 }
 
 .sprite-w_pink_2{
     top: 0;
-    left: 47px;
+    left: 35px;
 }
 
-.sprite-wi_i_body {
-    top: 28px;
-    left: 82px;
-}
-
-.sprite-wi_i_dot {
-    top: 0px;
-    left: 81px;
+.sprite-wi_i {
+    top: 20px;
+    left: 65px;
 }
 
 .sprite-dash {
-    top: 33px;
-    left: 108px;
+    top: 26px;
+    left: 80px;
 }
 
 #fi_6{
     position: absolute;
-    height: 87px;
-    width: 130px;
-    top: 112px;
-    left: 152px;
+    top: 83px;
+    left: 115px;
 }
 
 .sprite-F_crossbar {
-    top: 30px;
-    left: 00px;
+    top: 21px;
+    left: 1px;
 }
 
 .sprite-F_spine {
-    top: 2px;
+    top: 0px;
     left: 0px;
 }
 
 .sprite-F_top {
     top: 0px;
-    left: 0px;
+    left: -1px;
+}
+
+.sprite-6_top {
+	top: 0px;
+	left: 64px;
+}
+
+.sprite-6_bottom {
+    top: 21px;
+    left: 62px;
+}
+
+.sprite-wi_i_body {
+    top: 20px;
+    left: 60px;
+}
+
+.sprite-wi_i_dot {
+    top: 0px;
+    left: 60px;
 }
 
 .sprite-fi_i_body {
-    top: 27px;
-    left: 51px;
+    top: 20px;
+    left: 40px;
 }
 
 .sprite-fi_i_dot {
     top: 0px;
-    left: 51px;
-}
-
-.sprite-6_top {
-	top: 2px;
-	left: 83px;
-}
-
-.sprite-6_bottom {
-	top: 30px;
-	left: 82px;
+    left: 37px;
 }
 
 #txt1, #txt2 {
-    font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-    position: absolute;
+	font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	position: absolute;
 }
 
 #txt1 {
-    font-size: 32px;
-    line-height: 38px;
-    color: #00bceb;
-    top: 206px;
-    left: 17px;
+	font-size: 19px;
+	color: #00bceb;
+	top: 150px;
+	left: 15px;
 }
 
 #txt2 {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 1.1;
     color: #686868;
-    top: 324px;
-    left: 16px;
+    top: 175px;
+    left: 15px;
 }
 
 .sprite-tag {
     font-family: 'CiscoSans-ExtraLight', Arial, 'Helvetica Neue', Helvetica, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     position: absolute;
-    bottom: 18px;
-    left: 112px;
-    font-size: 16px;
+    bottom: 15px;
+    left: 77px;
+    font-size: 10px;
     letter-spacing: .5px;
     text-align: center;
     color: #00bceb;
@@ -362,11 +353,13 @@ body, html{margin:0; padding:0;}
 
 <body>
 <div id="wrapper">
-	<div id="content" onclick="go()">
+	<a href="javascript:void(window.open(window.clickTag, '_blank'))" id="clickArea"></a>
+	<div id="content">
 
+		
 		<img class="bg" src="bg.jpg">
 		<div class="sprite-cta">Watch video</div>
-        <div class="sprite-tag">The bridge to possible</div>
+		<div class="sprite-tag">The bridge to possible</div>
 
 		<div id="color_txt">
             <div id="five_g">
@@ -447,17 +440,12 @@ body, html{margin:0; padding:0;}
         <!-- /svg logo -->
 
             <div id="txt1">
-            	Yes.<br>
-                And it&rsquo;s only<br>
-                from Cisco.
+            	Yes. And it&rsquo;s only from Cisco.
             </div>
 
             <div id="txt2">
-            	See how<br>
-                Cisco&rsquo;s<br>
-                Intent-Based<br>
-            	Networking<br>
-                is ready for both.
+            	See how Cisco’s Intent-Based<br>
+            	Networking is ready for both.
             </div>
 
 
@@ -466,11 +454,11 @@ body, html{margin:0; padding:0;}
 	</div>
 </div>
 
-<script>    
-    function go (){
-        var t1=new TimelineLite();
-        //animate banner
-        t1
+<script>	
+	(function(){
+		var t1=new TimelineLite();
+		//animate banner
+		t1
          .from(".bg", 1, {opacity: 0})
 
          .from(".sprite-5_bottom", 0.25, {opacity: 0, ease: Power1.easeInOut}, "+=.25")
@@ -494,14 +482,17 @@ body, html{margin:0; padding:0;}
          .from(".sprite-amp_blue", 0.25, {opacity: 0, ease: Power1.easeInOut}, "+=.75")
          .from(".sprite-amp_red", 0.25, {opacity: 0, ease: Power1.easeInOut}, "-=.15")
 
-         .from("#txt1", 0.5, {opacity: 0}, "+=1")
-         .from("#txt2", 0.5, {opacity: 0}, "+=1")
+		 .from("#txt1", 0.5, {opacity: 0}, "+=1")
+		 .from("#txt2", 0.5, {opacity: 0}, "+=1")
 
-         .from(["#logo", ".sprite-tag"], 0.5, {opacity:0}, "+=1.25")
-         .from(".sprite-cta", 0.5, {opacity: 0}, "+=1")
-        }
-         // .pause(4)
-        ;
+		 .from(["#logo", ".sprite-tag"], 0.5, {opacity:0}, "+=1.25")
+		 .from(".sprite-cta", 0.5, {opacity: 0}, "+=1")
+
+		 // .pause(4)
+		;
+
+		console.log("length: "+t1.duration());
+	}()); //<--timeline self-executes on load
 </script>
 
 </body>
