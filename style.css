@@ -113,8 +113,6 @@ main,
 .philosophy {border-bottom: 1px dotted #e04622; border-top: 1px dotted #e04622;}
 
 
-/*STYLES FOR EMAILS PAGE*/
-
 .email-head {
 	background: url(./assets/emails/head-img.jpg)no-repeat;
 	width: 100%;
@@ -122,6 +120,7 @@ main,
 	overflow: hidden;
 }
 
+/*STYLES FOR EMAILS PAGE*/
 
 #left-side-email{
 	
