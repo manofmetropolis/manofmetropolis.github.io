@@ -110,17 +110,25 @@ main,
 	flex: 1;
 }
 
-.page-title {font-family: 'Michroma', sans-serif; text-align: right; padding-right: 20px; display: none;}
+.page-title {text-align: right; padding-right: 20px; display: none;}
 
 .work-intro, .email-container {border-bottom: 1px dotted #e04622;}
 .philosophy {border-bottom: 1px dotted #e04622; border-top: 1px dotted #e04622;}
 
 
-.email-head {
-	background: url(./assets/emails/head-img.jpg)no-repeat;
+.email-head, .banners-head {
 	width: 100%;
 	height: 250px;
 	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.email-head {
+	background: url(./assets/emails/head-img.jpg)no-repeat;
+}
+
+.banners-head {
+	background: url(./assets/banners/head-img.jpg)no-repeat;
 }
 
 /*STYLES FOR EMAILS PAGE*/
