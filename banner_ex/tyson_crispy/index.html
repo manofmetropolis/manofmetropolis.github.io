@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css">
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<meta name="viewport" content="width=device-width">
+<title>300x250</title>
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.0.1_min.js"></script>
+<script>
+	var clickTag="http://www.google.com";
+</script>
+<style>
+
+body, html{margin:0; padding:0;}
+#container{width:300px; height:250px; overflow:hidden; background:#ffffff; position:relative;}
+#clickArea{display:block; width:298px; height:248px; border:1px solid #cccccc; z-index:1000; cursor:pointer; position:absolute;}
+#content{position:relative; top:0; left:0; width:300px; height:250px;}
+.sprite{position: absolute;}
+
+/*----vvvexported from spritesheet generatorvvv----*/
+.bg, .end-card, .end-frame {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+}
+
+.crispy {
+    position: absolute;
+    top: 42px;
+    left: 9px;
+    width: 183px;
+    height: 38px;
+}
+
+.sprite {
+    background-image: url(./images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    background-size: calc(746px/2) calc(405px/2);
+}
+
+/*FIRST FRAME*/
+
+.sprite-C {
+    width: calc(122px/2);
+    height: calc(101px/2);
+    background-position: calc(0px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 95px;
+    left: 0px;
+}
+
+.sprite-R {
+    width: calc(138px/2);
+    height: calc(102px/2);
+    background-position: calc(-89px/2) calc(-180px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 93px;
+    left: 33px;
+}
+
+.sprite-I {
+    width: calc(107px/2);
+    height: calc(108px/2);
+    background-position: calc(-303px/2) calc(-72px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 89px;
+    left: 66px;
+}
+
+.sprite-S {
+    width: calc(123px/2);
+    height: calc(98px/2);
+    background-position: calc(0px/2) calc(-283px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 89px;
+    left: 92px;
+}
+
+.sprite-P {
+    width: calc(89px/2);
+    height: calc(98px/2);
+    background-position: calc(0px/2) calc(-180px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 92px;
+    left: 124px;
+}
+
+.sprite-Y {
+    width: calc(109px/2);
+    height: calc(101px/2);
+    background-position: calc(-123px/2) calc(-283px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 90px;
+    left: 154px;
+}
+
+.sprite-dot-1 {
+    width: calc(39px/2);
+    height: calc(38px/2);
+    background-position: calc(-418px/2) calc(-161px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 116px;
+    left: 185px;
+}
+
+.sprite-dot-2 {
+    width: calc(45px/2);
+    height: calc(49px/2);
+    background-position: calc(-418px/2) calc(-219px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 112px;
+    left: 195px;
+}
+
+.sprite-dot-3 {
+    width: calc(53px/2);
+    height: calc(39px/2);
+    background-position: calc(-418px/2) calc(-268px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 113px;
+    left: 204px;
+}
+
+.sprite-E {
+    width: calc(116px/2);
+    height: calc(104px/2);
+    background-position: calc(-187px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 88px;
+    left: 213px;
+}
+
+.sprite-R2 {
+    width: calc(121px/2);
+    height: calc(103px/2);
+    background-position: calc(-297px/2) calc(-180px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 84px;
+    left: 239px;
+}
+
+/*END FRAME*/
+
+.sprite-C-end {
+    width: calc(65px/2);
+    height: calc(71px/2);
+    background-position: calc(-122px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 0px;
+    left: 0px;
+}
+
+
+.sprite-R-end {
+    width: calc(70px/2);
+    height: calc(70px/2);
+    background-position: calc(-227px/2) calc(-180px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 1px;
+    left: 31px;
+}
+
+.sprite-I-end {
+    width: calc(44px/2);
+    height: calc(92px/2);
+    background-position: calc(-422px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: -3px;
+    left: 68px;
+}
+
+.sprite-S-end {
+    width: calc(52px/2);
+    height: calc(69px/2);
+    background-position: calc(-410px/2) calc(-92px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 1px;
+    left: 91px;
+}
+
+.sprite-P-end {
+    width: calc(53px/2);
+    height: calc(70px/2);
+    background-position: calc(-122px/2) calc(-92px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 1px;
+    left: 124px;
+}
+
+.sprite-Y-end {
+    width: calc(62px/2);
+    height: calc(71px/2);
+    background-position: calc(-232px/2) calc(-283px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 0px;
+    left: 152px;
+}
+
+.dots-end {
+    position: absolute;
+    top: 68px;
+    left: 186px;
+    width: 36px;
+    height: 11px;
+}
+
+.sprite-dot-1-end {
+    width: calc(20px/2);
+    height: calc(20px/2);
+    background-position: calc(-418px/2) calc(-199px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 0px;
+    left: 0px;
+}
+
+.sprite-dot-2-end {
+    width: calc(20px/2);
+    height: calc(20px/2);
+    background-position: calc(-438px/2) calc(-199px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 0px;
+    left: 13px;
+}
+
+.sprite-dot-3-end {
+    width: calc(20px/2);
+    height: calc(20px/2);
+    background-position: calc(-294px/2) calc(-307px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 0px;
+    left: 26px;
+}
+
+.sprite-ER-end {
+    width: calc(119px/2);
+    height: calc(72px/2);
+    background-position: calc(-303px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 42px;
+    left: 225px;
+}
+
+/*CHICKEN*/
+
+.sprite-front-chkn {
+    width: calc(280px/2);
+    height: calc(214px/2);
+    background-position: calc(-466px/2) calc(0px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 124px;
+    left: 0px;
+}
+
+.sprite-open-chkn {
+    width: calc(305px/2);
+    height: calc(98px/2);
+    background-position: calc(-314px/2) calc(-307px/2);
+    background-size: calc(746px/2) calc(405px/2);
+    top: 124px;
+    left: 146px;
+}
+
+
+/*----^^^exported from spritesheet generator^^^----*/
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="content" onclick="animateBanner()">
+		<img class="bg" src="./images/bg.jpg">
+
+		<div class="sprite sprite-C dance1"></div>
+		<div class="sprite sprite-R dance2"></div>
+		<div class="sprite sprite-I dance1"></div>
+		<div class="sprite sprite-S dance2"></div>
+		<div class="sprite sprite-P dance1"></div>
+		<div class="sprite sprite-Y dance2"></div>
+
+			<div class="sprite sprite-dot-1"></div>
+			<div class="sprite sprite-dot-2"></div>
+			<div class="sprite sprite-dot-3"></div>			
+
+		<div class="sprite sprite-E dance1"></div>
+		<div class="sprite sprite-R2 dance2"></div>
+
+		<div class="sprite sprite-front-chkn"></div>
+		<div class="sprite sprite-open-chkn"></div>
+
+        <div class="end-frame">
+            <img class="end-card" src="./images/end-card.jpg">
+            <div class="crispy">
+                <div class="sprite sprite-C-end pulse1"></div>
+                <div class="sprite sprite-R-end pulse2"></div>
+                <div class="sprite sprite-I-end pulse1"></div>
+                <div class="sprite sprite-S-end pulse2"></div>
+                <div class="sprite sprite-P-end pulse1"></div>
+                <div class="sprite sprite-Y-end pulse2"></div>
+            </div>
+
+            <div class="dots-end">
+                <div class="sprite sprite-dot-1-end"></div>
+                <div class="sprite sprite-dot-2-end"></div>
+                <div class="sprite sprite-dot-3-end"></div>
+            </div>         
+
+            <div class="sprite sprite-ER-end"></div>
+        </div>
+
+	</div>
+
+</div>
+<script>    
+    function animateBanner(){
+        var t1=new TimelineLite()
+        //animate banner
+        // FRAME 1: LOGO SCALE
+        
+        t1
+        .set ([".sprite-dot-1, .sprite-dot-2, .sprite-dot-3"], {opacity: 0, y: -7})
+        .set(".crispy", {x: 50})
+
+        .from(".sprite-C", .01, {opacity: 0}, "+=.20")
+        .from(".sprite-R", .01, {opacity: 0}, "+=.10")
+        .from(".sprite-I", .01, {opacity: 0}, "+=.10")
+        .from(".sprite-S", .01, {opacity: 0}, "+=.10")
+        .from(".sprite-P", .01, {opacity: 0}, "+=.10")
+        .from(".sprite-Y", .01, {opacity: 0}, "+=.10")
+        
+        .to([".sprite-dot-1", ".sprite-dot-2", ".sprite-dot-3"], .2, {opacity:1, y:0}, "+=.15")
+
+        .from([".sprite-E", ".sprite-R2"], .01, {opacity: 0}, "+=0.5")
+
+        .to(".dance1", 0.01, {rotationZ: -7}, "+=0.5")
+        .to(".dance2", 0.01, {rotationZ: 7})
+
+        .to(".dance1", 0.01, {rotationZ: 7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: -7})
+
+        .to(".dance1", 0.01, {rotationZ: -7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: 7})
+
+        .to(".dance1", 0.01, {rotationZ: 7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: -7})
+
+        .to(".dance1", 0.01, {rotationZ: -7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: 7})
+
+        .to(".dance1", 0.01, {rotationZ: 7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: -7})
+
+        .to(".dance1", 0.01, {rotationZ: -7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: 7})
+
+        .to(".dance1", 0.01, {rotationZ: 7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: -7})
+
+        .to(".dance1", 0.01, {rotationZ: -7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: 7})
+
+        .to(".dance1", 0.01, {rotationZ: 7}, "+=.2")
+        .to(".dance2", 0.01, {rotationZ: -7})
+
+        .from(".end-frame", 1, {x: 300, ease: Power1.easeOut}, "-=0.25")
+
+        .to(".pulse1", 0.2, {scale: 1.2, rotationZ: -5, y:-5}, "+=0.3")
+        .to(".pulse2", 0.2, {scale: 1.2, rotationZ: 5, y:5}, "-=0.2")
+
+        .to([".pulse1", ".pulse2"], 0.2, {scale: 1, rotationZ: 0, y:0})
+
+        .to(".crispy", 0.3, {x:0, ease: Power1.easeOut})
+        .from(".sprite-dot-1-end", 0.1, {opacity: 0, scale: 0, ease: Power1.easeOut}, "-=0.1")
+        .from(".sprite-dot-2-end",0.1, {opacity: 0, scale: 0, ease: Power1.easeOut})
+        .from(".sprite-dot-3-end", 0.1, {opacity: 0, scale: 0, ease: Power1.easeOut})
+
+        .from(".sprite-ER-end", 0.15, {opacity:0, scale: 0, ease: Power1.easeOut})
+
+
+            ;
+            console.log("length: "+t1.duration());
+    }; //<--timeline self-executes on load
+</script>
+</body>
+</html>
