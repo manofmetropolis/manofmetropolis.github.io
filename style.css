@@ -157,8 +157,10 @@ main,
 		display: block;
 		width: auto;
 	}
+}
 
-	.page-title {
+@media screen and (min-width: 800px) {
+		.page-title {
 		display: block;
 	}
 
