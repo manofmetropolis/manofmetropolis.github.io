@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=300,height=250">
+<meta name="viewport" content="width=device-width">
+<title>300x250</title>
+<script src="TweenLite.min.js"></script>
+<script src="TimelineLite.min.js"></script>
+<script src="CSSPlugin.min.js"></script>
+
+<script>
+	var clickTag="http://www.google.com";
+</script>
+<style>
+body, html{margin:0; padding:0;}
+#wrapper{width:300px; height:250px; overflow:hidden; background:#ffffff; position:relative;}
+#clickArea{display:block; width:298px; height:248px; border:1px solid #cccccc; z-index:1000; cursor:pointer; position:absolute;}
+#content{position:relative; top:0; left:0; width:300px; height:250px;}
+.sprite{position: absolute;}
+
+/*----vvvexported from spritesheet generatorvvv----*/
+
+/*----^^^exported from spritesheet generator^^^----*/
+
+/*--separate styles for positioning your elements--*/
+.logo {
+	top: 13px;
+	left: 13px;
+}
+
+.red-box {
+	top: 60px;
+	left: 0px;
+	width: 195px;
+	height: 68px;
+	overflow: hidden;
+	transform-origin: left;
+}
+
+.red-img {
+	background-image: url("assets/red-hero-a.png");
+	width: 300px;
+	height: 250px;
+	top: -60px;
+	left: 0px;
+}
+
+.copy {
+	font-family: arial;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 28px; 
+	line-height: 30px;
+	left: 13px;
+	top: 66px;
+}
+
+.final-copy {
+	font-family: arial;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 18px;
+	left: 13px;
+	top: 53px;
+}
+
+.cta {
+	top: 201px;
+	left: 13px;
+}
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div id="content" onclick="playAnimation()">
+		<!--html elements/sprites go here-->
+		<div class="hero sprite"><img src="assets/hero-a.png"></div>
+		<div class="logo sprite"><img src="assets/logo-black.png"></div>
+		<div class="red-box sprite">
+			<div class="red-img sprite"></div>
+		</div>
+		<div class="copy sprite frame-1">THE<br>EXPERTISE</div>
+		<div class="copy sprite frame-2">TO POWER<br>A WORLD</div>
+		<div class="copy sprite frame-3">THAT&#39;S<br>ALWAYS ON</div>
+		<div class="sprite final-copy">
+			<p>Over 3200 certified<br>technicians
+			<br><span style="line-height: 45px">24/7 support</span><br>
+			Cummins keeps<br>you moving</p>
+		</div>
+		<div class="cta sprite"><img src="assets/btn-a.png"></div>
+		<div class="hero-static sprite"><img src="assets/hero-a.png"></div>
+	</div>
+</div>
+<script>	
+	function playAnimation(){
+		var t1=new TimelineLite();
+		//animate banner
+		t1
+	// frame 1
+		.to(".hero-static", 0.01, {opacity: 0})
+		.from(".red-box", 1, {width:0, ease: Power2.easeOut}) /* please add easing to all of the animation effects */
+		.from(".frame-1", 1, {opacity:0, y:10, ease: Power2.easeOut})
+		.to(".frame-1", 0.5, {opacity:0, ease: Power2.easeOut}, "+=0.5")
+	// // frame 2
+		.from(".frame-2", 1, {opacity:0, y:10, ease: Power2.easeOut}, "-=0.5")
+		.to(".frame-2", 0.5, {opacity:0, ease: Power2.easeOut}, "+=0.5")
+	// // frame 3
+		.from(".frame-3", 1, {opacity:0, y:10, ease: Power2.easeOut}, "-=0.5")
+		.to(".frame-3", 0.5, {opacity:0, ease: Power2.easeOut}, "+=0.5")
+	// // frame 4
+		.to(".red-box", 1, {height: 175, ease: Power2.easeOut})
+		.from(".final-copy, .cta", 1, {opacity:0, ease: Power3.easeInOut})
+		console.log("length: "+t1.duration());
+	}; //<--timeline self-executes on load
+</script>
+</body>
+</html>
