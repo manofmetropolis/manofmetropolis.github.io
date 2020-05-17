@@ -150,7 +150,7 @@ a:hover .button {
     </div>
 </div>
 <script>    
-    (function(){
+    function animateBanner(){
         var t1=new TimelineLite();
         //animate banner
         t1
@@ -167,7 +167,7 @@ a:hover .button {
         .from(".amazon", 0.5, {opacity: 0})
 
         console.log("length: "+t1.duration());
-    }()); //<--timeline self-executes on load
+    }; //<--timeline self-executes on load
 </script>
 </body>
 </html>
