@@ -26,6 +26,8 @@ a:hover {
 	color: #e04622;
 	}
 
+.pre-title, .title, .page-title {font-family: 'Michroma', sans-serif;}
+
 .blue {color: #1c9ed8;}
 .yellow {color: #e1d950;}
 .red {color: #e04622;}
@@ -33,9 +35,10 @@ a:hover {
 .name {font-size: 40px;}
 .job {font-size: 32px;}
 
-.title {font-family: 'Michroma', sans-serif; font-size: 30px; padding-bottom: 10px;}
+.pre-title{font-size: 16px;}
+.title {font-size: 30px; padding-bottom: 10px;}
 .copy {font-size: 16px; text-align: center;}
-.disclaimer {font-size: 14px; text-align: center;}
+.disclaimer {font-size: 14px}
 
 .menu {
 	display: flex;
