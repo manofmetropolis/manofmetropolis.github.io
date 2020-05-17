@@ -33,7 +33,7 @@ a:hover {
 .name {font-size: 40px;}
 .job {font-size: 32px;}
 
-.title {font-family: 'Michroma', sans-serif; font-size: 30px;}
+.title {font-family: 'Michroma', sans-serif; font-size: 30px; padding-bottom: 10px;}
 .copy {font-size: 16px; text-align: center;}
 .disclaimer {font-size: 14px; text-align: center;}
 
