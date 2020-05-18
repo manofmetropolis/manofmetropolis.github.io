@@ -183,7 +183,9 @@ main {border: none;}
 
 .left-side-300{
 	flex: 0 2 300px;
+	align-content: center;
 }
 .right-side-300{
 	flex: 0 1 300px;
+	align-content: center;
 }
