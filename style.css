@@ -69,23 +69,8 @@ main {border: none;}
 	text-align: center;
 }
 
-
-/*.wrapper{
-	margin:auto;
-	max-width:75rem
-}*/
-
-main,
-.header,
-.left-side, .right-side,
-.portfolio,
-.copy,
-.disclaimer,
-.philosophy,
-.head-img {
-	display:block;
-	padding: 20px;
-}
+.pre-title{font-size: 16px;}
+.title {font-size: 30px; padding-bottom: 10px;}
 
 .work-row {
 	display: flex;
