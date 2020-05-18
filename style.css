@@ -135,6 +135,10 @@ main {border: none;}
 	background: url(./assets/banners/head-img.jpg)no-repeat;
 }
 
+.videos-head {
+	background: url(./assets/videos/head-img.jpg)no-repeat;
+}
+
 /*STYLES FOR EMAILS PAGE*/
 
 .left-side-email{
