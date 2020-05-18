@@ -148,34 +148,40 @@ main,
 
 /*STYLES FOR EMAILS PAGE*/
 
-#left-side-email{
-	
+.left-side-email{
 	flex: 0 2 400px;
 }
-#right-side-email{
+.right-side-email{
 	flex: 0 1 250px;
 }
 
-.email-container {
+/*.media-container {
 	padding: 25px 0;
-}
+}*/
 
-.email-img {padding-top: 10px;}
+.media-subtitle {padding-bottom: 10px;}
+
+/*.email-img {padding-top: 10px;}*/
 
 @media screen and (min-width:640px){
 	.flex-container{
 		display:flex;
 		justify-content: space-around;
+		border-bottom: 1px dotted #e04622;
 	}
 
 	.navitem {
 		display: block;
 		width: auto;
 	}
+
+	main {
+		border-left: 1px solid #e04622;
+	}
 }
 
 @media screen and (min-width: 800px) {
-		.page-title {
+	.page-title {
 		display: block;
 	}
 
