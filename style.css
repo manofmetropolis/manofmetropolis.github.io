@@ -172,10 +172,9 @@ main,
 
 /*STYLES FOR BANNERS PAGE*/
 
-#left-side-banners{
-	
+.left-side-300{
 	flex: 0 2 300px;
 }
-#right-side-banners{
+.right-side-300{
 	flex: 0 1 300px;
 }
