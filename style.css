@@ -26,6 +26,24 @@ a:hover {
 	color: #e04622;
 	}
 
+main,
+.header,
+.left-side, .right-side,
+.portfolio,
+.copy,
+.disclaimer,
+.philosophy,
+.head-img {
+	display:block;
+	padding: 20px;
+}
+
+main {border: none;}
+
+.flex-container {
+	border-bottom: 1px dotted #e04622;
+	padding: 15px 0;}
+
 .pre-title, .title, .page-title {font-family: 'Michroma', sans-serif;}
 
 .blue {color: #1c9ed8;}
@@ -34,9 +52,6 @@ a:hover {
 
 .name {font-size: 40px;}
 .job {font-size: 32px;}
-
-.pre-title{font-size: 16px;}
-.title {font-size: 30px; padding-bottom: 10px;}
 .copy {font-size: 16px; text-align: center;}
 .disclaimer {font-size: 14px}
 
