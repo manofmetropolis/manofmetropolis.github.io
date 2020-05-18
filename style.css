@@ -88,7 +88,9 @@ main {border: none;}
 	overflow: hidden;
 }
 
-.work-item:hover {border: 1px solid #e04622;}
+.work-item:hover {
+	border: 1px solid #e04622;
+}
 
 .work-item img,
 #superRob,
