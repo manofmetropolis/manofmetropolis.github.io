@@ -4,7 +4,6 @@
 
 body{
 	margin:0 auto;
-	padding:20px;
 	font-family: 'Helvetica', sans-serif;
 	background-color: #000000;
 	color: #1c9ed8;
@@ -26,24 +25,12 @@ a:hover {
 	color: #e04622;
 	}
 
-header,
-main,
-.left-side, .right-side,
-.portfolio,
-.copy,
-.disclaimer,
-.philosophy,
-.head-img {
-	display:block;
-	padding: 20px;
-}
+/*header,*/
+section, #intro {padding: 10px; margin-bottom: 10px;}
 
-main {border: none;}
+body, main {padding: 20px;}
 
-.flex-container {
-	border-bottom: 1px dotted #e04622;
-	padding: 15px 0;
-}
+#philosophy {border: 1px solid #e04622; padding: 20px;}
 
 .pre-title, .title, .page-title {font-family: 'Michroma', sans-serif;}
 
@@ -116,9 +103,6 @@ main {border: none;}
 
 .page-title {text-align: right; padding-right: 20px; display: none;}
 
-.work-intro, .email-container {border-bottom: 1px dotted #e04622;}
-.philosophy {border-bottom: 1px dotted #e04622; border-top: 1px dotted #e04622;}
-
 
 .media-head {
 	width: 100%;
@@ -160,7 +144,6 @@ main {border: none;}
 	.flex-container{
 		display:flex;
 		justify-content: space-around;
-		border-bottom: 1px dotted #e04622;
 	}
 
 	.navitem {
