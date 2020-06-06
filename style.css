@@ -150,10 +150,6 @@ body, main {padding: 20px;}
 		display: block;
 		width: auto;
 	}
-
-	main {
-		border-left: 1px solid #e04622;
-	}
 }
 
 @media screen and (min-width: 800px) {
