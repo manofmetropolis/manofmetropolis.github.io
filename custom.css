@@ -167,18 +167,14 @@ footer{
 	}
 }
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
 	.page-title {
 		display: block;
-	}
-
-	.page-title-mobile {
-		display: none;
-		margin: 0;
-	}
+		text-align: right;
+	}*/
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
 	.hide-large {
 		display: none;
 	}
@@ -186,3 +182,4 @@ footer{
 	.show-large {
 		display: block;
 	}
+}
