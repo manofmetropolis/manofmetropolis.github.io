@@ -131,19 +131,23 @@ footer{
 	margin: 10px;
 }
 
-.width-70 {
+.flex-item-300 {
+	width: 300px;
+	margin: 10px;
+}
+
+.email-img {
+	width: 100%;
+}
+
+.portfolio-row {
 	width: 70%;
 	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
 }
 
 /*STYLES FOR EMAILS PAGE*/
-
-.left-side-email{
-	flex: 0 2 400px;
-}
-.right-side-email{
-	flex: 0 1 250px;
-}
 
 /*.media-container {
 	padding: 25px 0;
