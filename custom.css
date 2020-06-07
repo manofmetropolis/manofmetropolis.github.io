@@ -79,10 +79,14 @@ footer{
 	padding: 100px 0;
 }
 
+#resume-frame {
+	text-align: center;
+}
+
 .work-icon {
 	margin: 10px;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	overflow: hidden;
 }
 
