@@ -38,7 +38,7 @@ main {
 	background-size: cover;
 	overflow: hidden;
     padding: 6rem 2rem;
-/*    color: white;*/
+    color: #000;
 }
 
 .head-container {
