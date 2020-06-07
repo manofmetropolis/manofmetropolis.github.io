@@ -20,23 +20,44 @@ ul {
 	list-style: none;
 }
 
-main{
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+main {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding-top: 20px;
+	background-color: white;
 }
 
 .jumbotron {
 	background-image: url("./assets/head-holder.jpg");
 	background-size: cover;
 	overflow: hidden;
-    padding: 9rem 2rem;
+    padding: 6rem 2rem;
     color: white;
 }
 
-.show-large {
-	display: none;
+.head-container {
+	width: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 6rem 4rem;
+}
+
+.email-head {
+		background-image: url("./assets/emails/head-img.jpg");
+}
+
+.banner-head {
+		background-image: url("./assets/banners/head-img.jpg");
+}
+
+.video-head {
+		background-image: url("./assets/videos/head-img.jpg");
 }
 
 .pad-15 {
