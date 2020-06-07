@@ -10,112 +10,89 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand hide" href="#">Robert M. Graff | Developer</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">LinkedIn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                 </li>
-                    <a class="nav-link" href="#">Resume</a>
-                </li>
-        <!--       <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li> -->
-                </ul>
-                </div>
-        </nav>
-        
-        <!-- Main Content -->
-        <main>
-            <section class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4 blue-txt">Responsive<br>Emails</h1>
-                </div>
-            </section>
+      <a class="navbar-brand hide-large">Robert M. Graff | Developer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://manofmetropolis.github.io">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/robert-graff" target="_blank">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+          </ul>
+        </div>
+      </nav>
+    <main>
+
+        <div class="head-container email-head"></div>
+
+      <hr>
             
             <!-- Hero -->
 
-            <section class="work-intro">
+            <section>
+                <h1>Responsive Email</h1>
             	<p>It's official: Mobile is queen. I approach my builds from a mobile-first perspective, then expand from there to code for larger devices. And just as important, I ensure that what I create plays well across different browsers, email clients, and operating systems. This way, a user can maximize their engagement with an email, no matter where they see it.</p>
             </section>
 
-            <section class="flex-container">
+            <section class="flex-row">
 
-                <div class="left-side-email">
-                    <div class="title textCenter">Desktop</div>
-                    <div class="media-subtitle textCenter">(Client: Kimberly-Clark)</div>
-					<img class="email-img" src="./assets/emails/desktop-email.jpg">           
+                <div class="flex-item-500">
+                    <h2 class="txt-center">Desktop</h2>
+                    <div class="txt-center">(Client: Kimberly-Clark)</div>
+					          <img class="email-img" src="./assets/emails/desktop-email.jpg">           
                 </div>
 
-                <div class="right-side-email">
-                    <div class="title textCenter">Mobile</div>
+                <div class="flex-item-300">
+                    <h2 class="txt-center">Mobile</h2>
                     <div><img class="email-img" src="./assets/emails/mobile-email.jpg"></div>
                 </div>
 
             </section>
 
-            <section class="flex-container">
+            <hr>
 
-                <div class="left-side">
-                    <div class="email-2 textCenter">Here, the benefits of starting off in a mobile-first direction: imagery that works across devices, live copy, and clean design. (Client: IQVIA)</div>      
-                </div>
+            <section class="flex-row center-in-row">
+                <div class= "flex-item-300">Here, the benefits of starting off in a mobile-first direction: imagery that works across devices, live copy, and clean design. (Client: IQVIA)</div>
 
-                <div class="right-side">
+                <div class="flex-item-500">
                     <img class="email-img" src="./assets/emails/email-group.jpg">
                 </div>
 
             </section>
 
-<!--             <div class="flex-container">
 
-                <div class="left-side">
-                    <div class="email-3">EMAIL 3 IMAGE</div>            
-                </div>
+        <hr>
 
-                <div class="right-side">
-                    <div class="email-3-txt textbox">EMAIL 3</div>
-                </div>
-
-            </div> -->
-
-
-            <section class="portfolio">
-            	<div class="title textCenter">
-                    See More
-                </div>
-            	<div class="work-row">
-<!--             		<div class="work-item"><img src="./assets/email_icon.jpg"></div> -->
-            		<div class="work-item"><a href="index.html"><img src="./assets/home_icon.jpg"></a></div>
-            		<div class="work-item"><a href="banners.html"><img src="./assets/banner_icon.jpg"></a></div>
-            		<div class="work-item"><a href="videos.html"><img src="./assets/video_icon.jpg"></a></div>
-            	</div>
-            </section>
+      <section id="portfolio">
+          <h2 class="txt-center">
+            Portfolio
+          </h2>
+        <div class="flex-row portfolio-row">
+<!--           <a href="emails.html"><img class="highlight work-icon" src="./assets/email_icon.jpg"></a> -->
+          <a href="banners.html"><img class="work-icon highlight" src="./assets/banner_icon.jpg"></a>
+          <a href="videos.html"><img class="work-icon highlight" src="./assets/video_icon.jpg"></a>
+        </div>
+      </section>
 
 
-        </main>
+      </main>
 
-        <footer class="blue-txt">
-          <p>&copy;2020 Robert M. Graff</p>
-        </footer>
+      <footer>
+        <p>&copy;2020 Robert M. Graff</p>
+      </footer>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         
     </body>
 </html>
