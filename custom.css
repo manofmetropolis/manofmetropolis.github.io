@@ -107,16 +107,22 @@ footer{
 	justify-content: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.4);
+  	position: relative;
+  	top: 0;
 }
+
+.work-icon:hover {
+	top: -3px;
+  	-webkit-transition: top ease .2s;
+	transition: top ease .2s;
+}
+
 
 .icon-label {
 	font-size: 24px;
 	line-height: 1.1;
 	background-color: rgba(255, 255, 255, 0.2);
-}
-
-.work-icon:hover {
-	border: 1px solid #e04622;
 }
 
 #email-icon {
