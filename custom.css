@@ -93,14 +93,38 @@ footer{
 }
 
 .work-icon {
+	display: flex;
+	flex-direction: column;
 	margin: 10px;
 	width: 150px;
 	height: 150px;
+	border-radius: 15%;
 	overflow: hidden;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.highlight:hover {
+.icon-label {
+	font-size: 24px;
+	line-height: 1.1;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.work-icon:hover {
 	border: 1px solid #e04622;
+}
+
+#email-icon {
+	background-image: url(./assets/email_icon.jpg);
+}
+
+#banner-icon {
+	background-image: url(./assets/banner_icon.jpg);
+}
+
+#video-icon {
+	background-image: url(./assets/video_icon.jpg);
 }
 
 .title {
