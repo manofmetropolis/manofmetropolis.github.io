@@ -25,6 +25,15 @@ nav {
 	margin: 0 auto;
 }
 
+a {
+	color: 	#494c4e;
+}
+
+a:hover {
+	text-decoration: none;
+	color: 	#494c4e;
+}
+
 main {
 	width: 100%;
 	max-width: 1200px;
