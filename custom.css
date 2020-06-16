@@ -59,9 +59,15 @@ main {
 }
 
 #name {
-	font-family: 'Libre Baskerville', serif;
-	font-size: 4rem;
-	font-weight: 400;
+/*	font-family: 'Libre Baskerville', serif;*/
+	font-size: 4.5rem;
+	line-height: 1.1;
+}
+
+#job {
+	font-size: 3rem;
+	line-height: 1.1;
+	font-weight: 300;
 }
 
 .head-container {
