@@ -44,18 +44,24 @@ a:hover {
 
 main {
 	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
+	/*max-width: 1200px;*/
+	/*margin: 0 auto;*/
 /*	padding-top: 20px;*/
-	background-color: white;
+	background-color: #f8f9fa;
 }
 
-.jumbotron {
-	background-image: url("./assets/head-holder.jpg");
+.jumbo {
+	background-image: url("./assets/octopus-1.jpg");
 	background-size: cover;
 	overflow: hidden;
     padding: 6rem 2rem;
-    color: #000;
+    color: #fff;
+}
+
+#name {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 4rem;
+	font-weight: 400;
 }
 
 .head-container {
