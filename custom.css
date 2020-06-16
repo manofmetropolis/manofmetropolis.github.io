@@ -72,9 +72,11 @@ main {
 
 .head-container {
 	width: 100%;
-	background-size: contain;
-	background-repeat: no-repeat;
-	padding: 6rem 4rem;
+	height: 250px;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding: 6rem 4rem;
 }
 
 .email-head {
