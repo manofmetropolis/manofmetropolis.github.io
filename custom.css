@@ -221,6 +221,16 @@ footer{
 
 .media-subtitle {padding-bottom: 10px;}
 
+@media screen and (max-width: 500px) {
+	.jumbo {
+	    background-image: url(./assets/octopus-2.jpg);
+	    background-size: cover;
+	    overflow: hidden;
+		padding: 2rem 2rem 10rem;
+	    color: #fff;
+		}
+}
+
 @media screen and (min-width:640px){
 	.flex-container{
 		display:flex;
