@@ -55,6 +55,7 @@ main {
 	background-size: cover;
 	overflow: hidden;
     padding: 6rem 2rem;
+    margin-bottom: 25px;
     color: #fff;
 }
 
