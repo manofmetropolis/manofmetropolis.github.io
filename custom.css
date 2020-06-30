@@ -11,12 +11,16 @@ body {
 	flex-direction: column;
 	padding-top: 56px;
 	width: 100%;
-	min-width: 400px;
+	min-width: 450px;
 	max-width: 1200px;
 	color: #494c4e;
 	background-color: #000;
 /*	max-width: 1200px;*/
 	margin: 0 auto;
+}
+
+.extra-pad-top {
+	padding-top: 50px;
 }
 
 h1 {
