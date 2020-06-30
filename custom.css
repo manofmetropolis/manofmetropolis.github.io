@@ -81,6 +81,7 @@ main {
     background-size: cover;
     overflow: hidden;
     background-repeat: no-repeat;
+    margin-top: 25px;
     padding: 6rem 4rem;
 }
 
@@ -116,7 +117,7 @@ footer{
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding: 100px 0;
+	padding: 25px 0;
 }
 
 #resume-frame {
