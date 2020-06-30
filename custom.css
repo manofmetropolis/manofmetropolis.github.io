@@ -4,6 +4,7 @@ html {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
+	background-color: #000;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 	min-width: 450px;
 	max-width: 1200px;
 	color: #494c4e;
-	background-color: #000;
+	background-color: #F8F9FA;
 /*	max-width: 1200px;*/
 	margin: 0 auto;
 }
@@ -51,7 +52,6 @@ main {
 	/*max-width: 1200px;*/
 	/*margin: 0 auto;*/
 /*	padding-top: 20px;*/
-	background-color: #fff;
 }
 
 .jumbo {
@@ -114,8 +114,8 @@ aside {
 }
 
 footer{
-	background-color: black;
-	color: white;
+	background-color: #F8F9FA;
+	font-size: .75rem;
 	text-align: center;
 	padding: 25px 0;
 }
